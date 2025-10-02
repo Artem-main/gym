@@ -1,0 +1,17 @@
+bot:
+  name: my_trenbot
+  token: 8227396699:AAHLuSqmIcpHJSQ3Nv2DISNkngl0F_2gCoo
+
+#spring:
+#  datasource:
+#    url: jdbc:sqlite:file:${db.path}
+#    driver-class-name: org.sqlite.JDBC
+
+app.db.path: users.db  # путь к файлу БД
+
+server:
+  port: ${PORT:8080}
+  spring:
+    cloud:
+      heroku:
+        enabled: true
