@@ -8,10 +8,13 @@ bot:
 #    driver-class-name: org.sqlite.JDBC
 
 app.db.path: users.db  # путь к файлу БД
+spring:
+  telegram:
+    bots: api-url=https://api.telegram.org
 
-server:
-  port: ${PORT:8080}
-  spring:
-    cloud:
-      heroku:
-        enabled: true
+#server:
+#  port: ${PORT:8080}
+#  spring:
+#    cloud:
+#      heroku:
+#        enabled: true
