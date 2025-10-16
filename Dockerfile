@@ -9,4 +9,5 @@ EXPOSE 8080
 # Убираем лишние параметры подключения к БД
 CMD java -jar app.jar \
   --spring.profiles.active=prod \
-  --telegram.bot.token=${TELEGRAM_BOT_TOKEN}
+  --telegram.bot.token=${TELEGRAM_BOT_TOKEN} \
+
